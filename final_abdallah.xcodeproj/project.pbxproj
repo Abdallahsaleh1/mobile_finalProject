@@ -21,6 +21,7 @@
 		3F68ADDD262AEDD30020B8FC /* ASVehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F68ADDC262AEDD30020B8FC /* ASVehicle.m */; };
 		3F68ADEC262AF2990020B8FC /* ASMotorCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F68ADEB262AF2990020B8FC /* ASMotorCycle.m */; };
 		3F68ADF2262AF50F0020B8FC /* ASCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F68ADF1262AF50F0020B8FC /* ASCar.m */; };
+		3F88BBCC262C1767005CF094 /* ASTruck.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F88BBCB262C1767005CF094 /* ASTruck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		3F68ADEB262AF2990020B8FC /* ASMotorCycle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASMotorCycle.m; sourceTree = "<group>"; };
 		3F68ADF0262AF50F0020B8FC /* ASCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASCar.h; sourceTree = "<group>"; };
 		3F68ADF1262AF50F0020B8FC /* ASCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASCar.m; sourceTree = "<group>"; };
+		3F88BBCA262C1767005CF094 /* ASTruck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASTruck.h; sourceTree = "<group>"; };
+		3F88BBCB262C1767005CF094 /* ASTruck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASTruck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +147,8 @@
 				3F68ADEB262AF2990020B8FC /* ASMotorCycle.m */,
 				3F68ADF0262AF50F0020B8FC /* ASCar.h */,
 				3F68ADF1262AF50F0020B8FC /* ASCar.m */,
+				3F88BBCA262C1767005CF094 /* ASTruck.h */,
+				3F88BBCB262C1767005CF094 /* ASTruck.m */,
 			);
 			path = final_abdallah;
 			sourceTree = "<group>";
@@ -296,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F68ADF2262AF50F0020B8FC /* ASCar.m in Sources */,
+				3F88BBCC262C1767005CF094 /* ASTruck.m in Sources */,
 				3F68ADD7262AE7940020B8FC /* ASAutoMobile.m in Sources */,
 				3F68AD88262AD4500020B8FC /* ViewController.m in Sources */,
 				3F68AD82262AD4500020B8FC /* AppDelegate.m in Sources */,

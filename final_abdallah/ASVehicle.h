@@ -19,7 +19,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype) initWithLength:(NSInteger) length
                           Width:(NSInteger) width
-                          Color:(UIColor *) color;
+                          Color:(UIColor *) color
+             ManufactureCompany:(NSString *)manufactureCompany
+                manufactureDate:(NSDate *)manufactureDate
+                         engine:(ASEngine *)engine
+                       plateNum:(NSInteger)plateNum
+                  bodySerialNum:(NSInteger)bodySerialNum;
+
 @end
 
 NS_ASSUME_NONNULL_END

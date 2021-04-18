@@ -13,7 +13,14 @@ NS_ASSUME_NONNULL_BEGIN
     
 }
 @property NSInteger chairNum;
-@property bool isFurnitireLeather;
+@property bool isFurnitureLeather;
+
+- (instancetype) initWithChairNum:(NSInteger) chairNum
+               ISFurnitureLeather:(bool) isFurnitureLeather
+                           Length:(NSInteger) length
+                            Width:(NSInteger) width
+                            Color:(UIColor *) color;
+
 @end
 
 NS_ASSUME_NONNULL_END

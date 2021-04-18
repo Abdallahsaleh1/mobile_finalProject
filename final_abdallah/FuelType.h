@@ -7,6 +7,10 @@
 
 #ifndef FuelType_h
 #define FuelType_h
-typedef NS_ENUM(NSUInteger, fuelType);
+typedef NS_ENUM(NSUInteger, fuelType){
+    diesel = 9,
+    gasoline
+};
+
 
 #endif /* FuelType_h */

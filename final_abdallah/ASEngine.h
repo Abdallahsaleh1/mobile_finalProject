@@ -16,13 +16,13 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, retain)   NSDate *manufactureDate;
 @property (nonatomic, copy)     NSString *model;
 @property (nonatomic, assign)   NSInteger cylinder;
-@property (nonatomic, assign)   fuelType *fueltype;
+
 
 - (instancetype)initWithManufacture: (NSString *)manufacture
                     ManufactureDate: (NSDate *) manufactureDate
                               Model: (NSString *) model
-                           Cylinder: (NSInteger) cylinder
-                           FuelType: (fuelType *)fueltype;
+                           Cylinder: (NSInteger) cylinder;
+                           
 
 @end
 

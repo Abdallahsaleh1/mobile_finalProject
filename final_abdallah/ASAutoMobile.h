@@ -17,14 +17,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, retain)    NSDate *manufactureDate;
 @property (nonatomic, retain)    ASEngine *engine;
 @property (nonatomic, assign)    NSInteger plateNum;
-@property (nonatomic, assign)    gearType *gearType;
 @property (nonatomic, assign)    NSInteger bodySerialNum;
 
 - (instancetype)initWithManufactureCompany:(NSString *)manufactureCompany
                   manufactureDate:(NSDate *)manufactureDate
                            engine:(ASEngine *)engine
                          plateNum:(NSInteger)plateNum
-                         gearType:(gearType *)gearType
                     bodySerialNum:(NSInteger)bodySerialNum;
 @end
 
