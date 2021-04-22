@@ -19,7 +19,12 @@ NS_ASSUME_NONNULL_BEGIN
                          FullWeight:(double) fullWeight
                              Length:(NSInteger) length
                               Width:(NSInteger) width
-                              Color:(UIColor *) color;
+                              Color:(UIColor *) color
+                 manufactureCompany:(NSString *)manufactureCompany
+                    manufactureDate:(NSDate *)manufactureDate
+                             engine:(ASEngine *)engine
+                           plateNum:(NSInteger)plateNum
+                      bodySerialNum:(NSInteger)bodySerialNum;
 
 @end
 

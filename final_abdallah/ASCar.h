@@ -18,9 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype) initWithChairNum:(NSInteger) chairNum
                ISFurnitureLeather:(bool) isFurnitureLeather
                            Length:(NSInteger) length
-                            Width:(NSInteger) width
-                            Color:(UIColor *) color;
-
+                            width:(NSInteger) width
+                            color:(UIColor *) color
+               manufactureCompany:(NSString *)manufactureCompany
+                  manufactureDate:(NSDate *)manufactureDate
+                           engine:(ASEngine *)engine
+                         plateNum:(NSInteger)plateNum
+                    bodySerialNum:(NSInteger)bodySerialNum;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -16,6 +16,7 @@
                          engine:(ASEngine *)engine
                        plateNum:(NSInteger)plateNum
                   bodySerialNum:(NSInteger)bodySerialNum{
+    
     self = [super initWithManufactureCompany:manufactureCompany manufactureDate:manufactureDate engine:engine plateNum:plateNum bodySerialNum:bodySerialNum];
     if (self) {
         [self setLength: length];
@@ -32,11 +33,14 @@
                            engine:(ASEngine *)engine
                          plateNum:(NSInteger)plateNum
                              bodySerialNum:(NSInteger)bodySerialNum {
-    return [self initWithManufactureCompany :manufactureCompany
-                             manufactureDate:manufactureDate
-                                      engine:engine
-                                    plateNum:plateNum
-                               bodySerialNum:bodySerialNum];
+    return [self initWithLength:250
+                          width:130
+                          color:nil
+            manufactureCompany :manufactureCompany
+                manufactureDate:manufactureDate
+                         engine:engine
+                       plateNum:plateNum
+                  bodySerialNum:bodySerialNum];
 }
 -(instancetype) init {
     NSInteger defaultLength = 230;

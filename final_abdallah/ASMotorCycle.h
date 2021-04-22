@@ -17,11 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype) initWithTierDiameter:(double) tierDiameter
                                Length:(double) length
-                   ManufactureCompany:(NSString *)manufactureCompany
+                   manufactureCompany:(NSString *)manufactureCompany
                       manufactureDate:(NSDate *)manufactureDate
                                engine:(ASEngine *)engine
                              plateNum:(NSInteger)plateNum
-                             gearType:(gearType *)gearType
                         bodySerialNum:(NSInteger)bodySerialNum;
                           
 
