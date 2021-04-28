@@ -9,8 +9,8 @@
 
 @implementation ASVehicle
 - (instancetype) initWithLength:(NSInteger) length
-                          width:(NSInteger) width
-                          color:(UIColor *) color
+                          Width:(NSInteger) width
+                          Color:(UIColor *) color
              manufactureCompany:(NSString *)manufactureCompany
                 manufactureDate:(NSDate *)manufactureDate
                          engine:(ASEngine *)engine
@@ -34,9 +34,9 @@
                          plateNum:(NSInteger)plateNum
                              bodySerialNum:(NSInteger)bodySerialNum {
     return [self initWithLength:250
-                          width:130
-                          color:nil
-            manufactureCompany :manufactureCompany
+                          Width:130
+                          Color:nil
+             manufactureCompany:manufactureCompany
                 manufactureDate:manufactureDate
                          engine:engine
                        plateNum:plateNum
@@ -52,7 +52,7 @@
     NSInteger defaultPlateNum = 1105;
     NSInteger defaultBodySerialNum = 119118119;
     
-    return [self initWithLength:defaultLength width:defaultWidth color:defaultColor manufactureCompany:defaultManufactureCompany manufactureDate:defaultmanufactureDate engine:defaultEngine plateNum:defaultPlateNum bodySerialNum:defaultBodySerialNum];
+    return [self initWithLength:defaultLength Width:defaultWidth Color:defaultColor manufactureCompany:defaultManufactureCompany manufactureDate:defaultmanufactureDate engine:defaultEngine plateNum:defaultPlateNum bodySerialNum:defaultBodySerialNum];
 }
     
 @end
