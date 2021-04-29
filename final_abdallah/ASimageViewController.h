@@ -6,10 +6,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ASCar.h"
+#import "ASTruck.h"
+#import "ASMotorCycle.h"
+#import "ASDetailsViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ASimageViewController : UIViewController
+@property(retain, nonatomic) id currentcar;
+
+@property (weak, nonatomic) IBOutlet UIImageView *carImageView;
+
 
 @end
 

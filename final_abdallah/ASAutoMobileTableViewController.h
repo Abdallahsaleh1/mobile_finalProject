@@ -9,6 +9,7 @@
 #import "ASCar.h"
 #import "ASMotorCycle.h"
 #import "ASTruck.h"
+#import "ASimageViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ASAutoMobileTableViewController : UITableViewController
