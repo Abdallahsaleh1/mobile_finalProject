@@ -13,10 +13,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ASDetailsViewController : UIViewController
+@interface ASDetailsViewController : UIViewController 
 
-@property (weak, nonatomic) id currentcar;
-@property (weak, nonatomic) IBOutlet UILabel *carDetailsLabel;
+@property(retain, nonatomic) id currentAutoMobile;
+
+
+@property (weak, nonatomic) IBOutlet UIImageView *carImage;
+
+
+@property (weak, nonatomic) IBOutlet UILabel *carName;
 
 
 @end

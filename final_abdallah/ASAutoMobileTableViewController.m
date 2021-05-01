@@ -25,6 +25,8 @@
     
     ASCar *car = [[ASCar alloc]initWithChairNum:5 ISFurnitureLeather:YES Length:260 width:130 color:[UIColor new] manufactureCompany:@"AUDI" manufactureDate:[NSDate new] engine:[[ASEngine alloc]init] plateNum:1105 bodySerialNum:1787444602];
     
+    
+    //NSLog(@"%@", [car valueForKey:@"manufactureCompany"]);
     [AutoMobileArray addObject:car];
     
     car = [[ASCar alloc]initWithChairNum:7 ISFurnitureLeather:YES Length:300 width:150 color:[UIColor new] manufactureCompany:@"Tesla" manufactureDate:[NSDate new] engine:[[ASEngine alloc]init] plateNum:7777 bodySerialNum:45547775433];
@@ -113,7 +115,7 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController]
-    ASimageViewController *carVC = [segue destinationViewController];
+    ASDetailsViewController *carVC = [segue destinationViewController];
     
     NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
     // Pass the selected object to the new view controller.
