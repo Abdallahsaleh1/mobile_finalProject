@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F42BEF12634126D006CB71A /* ASimageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F42BEF02634126D006CB71A /* ASimageViewController.m */; };
 		3F42BEF7263412AD006CB71A /* ASDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F42BEF6263412AD006CB71A /* ASDetailsViewController.m */; };
 		3F68AD82262AD4500020B8FC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F68AD81262AD4500020B8FC /* AppDelegate.m */; };
 		3F68AD85262AD4500020B8FC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F68AD84262AD4500020B8FC /* SceneDelegate.m */; };
@@ -44,8 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F42BEEF2634126D006CB71A /* ASimageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASimageViewController.h; sourceTree = "<group>"; };
-		3F42BEF02634126D006CB71A /* ASimageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASimageViewController.m; sourceTree = "<group>"; };
 		3F42BEF5263412AD006CB71A /* ASDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASDetailsViewController.h; sourceTree = "<group>"; };
 		3F42BEF6263412AD006CB71A /* ASDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASDetailsViewController.m; sourceTree = "<group>"; };
 		3F68AD7D262AD4500020B8FC /* final_abdallah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = final_abdallah.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -153,8 +150,6 @@
 				3F68ADF1262AF50F0020B8FC /* ASCar.m */,
 				3F88BBCA262C1767005CF094 /* ASTruck.h */,
 				3F88BBCB262C1767005CF094 /* ASTruck.m */,
-				3F42BEEF2634126D006CB71A /* ASimageViewController.h */,
-				3F42BEF02634126D006CB71A /* ASimageViewController.m */,
 				3F42BEF5263412AD006CB71A /* ASDetailsViewController.h */,
 				3F42BEF6263412AD006CB71A /* ASDetailsViewController.m */,
 				3F6ECC1A263954C000AAB554 /* ASAutoMobileTableViewController.h */,
@@ -312,7 +307,6 @@
 			files = (
 				3F68ADF2262AF50F0020B8FC /* ASCar.m in Sources */,
 				3F88BBCC262C1767005CF094 /* ASTruck.m in Sources */,
-				3F42BEF12634126D006CB71A /* ASimageViewController.m in Sources */,
 				3F68ADD7262AE7940020B8FC /* ASAutoMobile.m in Sources */,
 				3F6ECC1C263954C000AAB554 /* ASAutoMobileTableViewController.m in Sources */,
 				3F68AD82262AD4500020B8FC /* AppDelegate.m in Sources */,

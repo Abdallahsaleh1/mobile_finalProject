@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UIImageView *carImage;
 
+@property (weak, nonatomic) IBOutlet UITableView *AutoMobileTable;
 
 @property (weak, nonatomic) IBOutlet UILabel *carName;
 

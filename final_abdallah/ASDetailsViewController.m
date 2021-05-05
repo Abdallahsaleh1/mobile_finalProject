@@ -7,10 +7,10 @@
 
 #import "ASDetailsViewController.h"
 
-@interface ASDetailsViewController () <UITableViewDelegate>{
-    NSArray *carKeysArray;
-    NSArray *truckKeysArray;
-    NSArray *motorKeysArray;
+@interface ASDetailsViewController () <UITableViewDelegate,UITableViewDataSource>{
+    NSMutableArray *carKeysArray;
+    NSMutableArray *truckKeysArray;
+    NSMutableArray *motorKeysArray;
 }
 
 @end
@@ -19,22 +19,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    carKeysArray = [NSMutableArray new];
-    truckKeysArray = [NSMutableArray new];
-    motorKeysArray = [NSMutableArray new];
+    
     // Do any additional setup after loading the view.
-    carKeysArray = [NSArray arrayWithObjects:@"chairNum",@"iSFurnitureLeather",@"length",@"width",@"color",@"manufactureCompany",@"manufactureDate",@"engine",@"plateNum",@"bodySerialNum", nil];
+    carKeysArray = [NSMutableArray arrayWithObjects:@"chairNum",@"isFurnitureLeather",@"length",@"width",@"manufactureCompany",@"manufactureDate",@"plateNum",@"bodySerialNum", nil];
     
-    truckKeysArray = [NSArray arrayWithObjects:@"freeWeight",@"fullWeight",@"length",@"width",@"color",@"manufactureCompany",@"manufactureDate",@"engine",@"plateNum",@"bodySerialNum", nil];
+    truckKeysArray = [NSMutableArray arrayWithObjects:@"freeWeight",@"fullWeight",@"length",@"width",@"manufactureCompany",@"manufactureDate",@"plateNum",@"bodySerialNum", nil];
     
-    motorKeysArray = [NSArray arrayWithObjects:@"tierDiameter",@"length",@"width",@"color",@"manufactureCompany",@"manufactureDate",@"engine",@"plateNum",@"bodySerialNum", nil];
+    
+    motorKeysArray = [NSMutableArray arrayWithObjects:@"tierDiameter",@"length",@"manufactureCompany",@"manufactureDate",@"plateNum",@"bodySerialNum", nil];
     
     [self.carImage setImage:[UIImage imageNamed:[self.currentAutoMobile manufactureCompany]]];
     [self.carName setText:[self.currentAutoMobile manufactureCompany]];
     
-    
-    
-    
+    [self.AutoMobileTable setDelegate:self];
+    [self.AutoMobileTable setDataSource:self];
     
 }
 #pragma mark - Table view data source
@@ -47,36 +45,51 @@
     
     if([self.currentAutoMobile isKindOfClass:[ASCar class]]) {
         return carKeysArray.count;
-        
+    
     } else if([self.currentAutoMobile isKindOfClass:[ASTruck class]]) {
         return truckKeysArray.count;
-        
+
     } else if([self.currentAutoMobile isKindOfClass:[ASMotorCycle class]]) {
         return motorKeysArray.count;
+
+    }
+    else {
+        return 1;
         
     }
-    
-    return 0;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    NSLog(@"aa");
+
     // Configure the cell...
     if ([self.currentAutoMobile isKindOfClass:[ASCar class]]){
-        cell.textLabel.text= [self.currentAutoMobile valueForKey:[carKeysArray objectAtIndex:indexPath.row]];
-        
+        NSString *casting= [NSString stringWithFormat:@"%@",[self.currentAutoMobile valueForKey:[carKeysArray objectAtIndex:indexPath.row]]];
+        NSString *label = [carKeysArray objectAtIndex:indexPath.row];
+        NSString *spacer = [label stringByAppendingString:@": "];
+        casting = [spacer stringByAppendingString: casting];
+        cell.textLabel.text= casting;
         
     } else if([self.currentAutoMobile isKindOfClass:[ASTruck class]]){
-        cell.textLabel.text= [self.currentAutoMobile valueForKey:[truckKeysArray objectAtIndex:indexPath.row]];
-
+        NSString *casting= [NSString stringWithFormat:@"%@",[self.currentAutoMobile valueForKey:[truckKeysArray objectAtIndex:indexPath.row]]];
+        NSString *label = [truckKeysArray objectAtIndex:indexPath.row];
+        NSString *spacer = [label stringByAppendingString:@": "];
+        casting = [spacer stringByAppendingString: casting];
+        cell.textLabel.text= casting;
         
+
     } else if([self.currentAutoMobile isKindOfClass:[ASMotorCycle class]]){
-        cell.textLabel.text= [self.currentAutoMobile valueForKey:[motorKeysArray objectAtIndex:indexPath.row]];
-        
-    }
+        NSString *casting= [NSString stringWithFormat:@"%@",[self.currentAutoMobile valueForKey:[motorKeysArray objectAtIndex:indexPath.row]]];
+        NSString *label = [motorKeysArray objectAtIndex:indexPath.row];
+        NSString *spacer = [label stringByAppendingString:@": "];
+        casting = [spacer stringByAppendingString: casting];
+        cell.textLabel.text= casting;
 
+    }
+    
+    NSLog(@"kk");
     return cell;
 }
 

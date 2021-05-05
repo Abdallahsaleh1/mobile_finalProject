@@ -119,7 +119,7 @@
     
     NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
     // Pass the selected object to the new view controller.
-    [carVC setCurrentcar:[AutoMobileArray objectAtIndex:selectedIndexPath.row]];
+    [carVC setCurrentAutoMobile:[AutoMobileArray objectAtIndex:selectedIndexPath.row]];
 }
 
 

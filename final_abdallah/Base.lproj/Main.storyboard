@@ -35,7 +35,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="7ye-VR-ebo" kind="presentation" id="m3z-eK-cRF"/>
+                                    <segue destination="7ye-VR-ebo" kind="presentation" id="khq-7b-9rc"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -78,7 +78,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Ofg-eJ-X0Z">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Ofg-eJ-X0Z">
                                         <rect key="frame" x="0.0" y="28" width="396" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ofg-eJ-X0Z" id="sSH-3x-UV3">
@@ -88,7 +88,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="delegate" destination="v2x-0j-kXs" id="zqc-B5-VYt"/>
+                                    <outlet property="dataSource" destination="7ye-VR-ebo" id="Jtb-qQ-n7A"/>
+                                    <outlet property="delegate" destination="7ye-VR-ebo" id="Evk-FG-EdL"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -100,6 +101,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="AutoMobileTable" destination="hkS-oZ-668" id="wmw-Lg-yWt"/>
                         <outlet property="carImage" destination="lWo-ar-2FO" id="Tkh-ja-6Uc"/>
                         <outlet property="carName" destination="JGD-t2-ibk" id="gQN-5b-cLJ"/>
                     </connections>
