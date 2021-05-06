@@ -44,7 +44,7 @@
     NSInteger defaultTierDiameter = 12;
     NSInteger defaultLength = 130;
     NSString *defaultManufactureCompany = @"AUDI";
-    NSDate *defaultmanufactureDate = nil;
+    NSDate *defaultmanufactureDate = [NSDate new];
     ASEngine *defaultEngine = [[ASEngine alloc] init];
     NSInteger defaultPlateNum = 1105;
     NSInteger defaultBodySerialNum = 119118119;

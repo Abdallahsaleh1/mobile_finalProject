@@ -62,7 +62,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    NSLog(@"aa");
+   
 
     // Configure the cell...
     if ([self.currentAutoMobile isKindOfClass:[ASCar class]]){
@@ -89,7 +89,7 @@
 
     }
     
-    NSLog(@"kk");
+    
     return cell;
 }
 

@@ -45,9 +45,9 @@
 -(instancetype) init {
     NSInteger defaultLength = 230;
     NSInteger defaultWidth = 130;
-    UIColor *defaultColor = nil;
+    UIColor *defaultColor = [UIColor new];
     NSString *defaultManufactureCompany = @"AUDI";
-    NSDate *defaultmanufactureDate = nil;
+    NSDate *defaultmanufactureDate = [NSDate new];
     ASEngine *defaultEngine = [[ASEngine alloc] init];
     NSInteger defaultPlateNum = 1105;
     NSInteger defaultBodySerialNum = 119118119;

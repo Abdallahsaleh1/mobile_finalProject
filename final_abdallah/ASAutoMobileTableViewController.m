@@ -10,6 +10,7 @@
 @interface ASAutoMobileTableViewController (){
     NSMutableArray * AutoMobileArray;
    
+    
 }
 
 @end
@@ -18,9 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //CarArray = [NSMutableArray new];
     AutoMobileArray = [NSMutableArray new];
-    //MotorCycleArray = [NSMutableArray new];
+    
+     // You need to set frame or other properties and add to your view...you can either use XIB code...
 
     
     ASCar *car = [[ASCar alloc]initWithChairNum:5 ISFurnitureLeather:YES Length:260 width:130 color:[UIColor new] manufactureCompany:@"AUDI" manufactureDate:[NSDate new] engine:[[ASEngine alloc]init] plateNum:1105 bodySerialNum:1787444602];
@@ -42,11 +43,8 @@
     [AutoMobileArray addObject:motor];
     
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
 }
 
 #pragma mark - Table view data source
@@ -75,39 +73,6 @@
 }
 
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 
 #pragma mark - Navigation
@@ -121,6 +86,7 @@
     // Pass the selected object to the new view controller.
     [carVC setCurrentAutoMobile:[AutoMobileArray objectAtIndex:selectedIndexPath.row]];
 }
+
 
 
 @end
